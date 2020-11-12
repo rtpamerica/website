@@ -1,0 +1,164 @@
+---
+layout: default
+title: Rescue The Poor
+---
+
+<header>
+	<div class="container">
+		<div class="column">
+			<div>
+				<h1 class="editable">
+					Impact: November
+				</h1>
+				<p class="editable">
+					Fundraising $3500!<br /><br />The Entebbe and Kakiri orphanages are out of food, due to economic impact of Covid 19.
+				</p>
+				<div class="button">
+					<a href="#donate">Donate Now</a>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<img src="{{ site.baseurl }}/images/sheep.png" alt="Joy" />
+		</div>
+	</div>
+</header>
+
+
+<div class="container">
+	<div class="column">
+		<span class="image"><img class="editable" src="/images/Uganda_blowup.png" alt="Map" /></span>
+	</div>
+	<div class="column">
+		<div>
+			<h1 class="editable">
+				Focus: Uganda
+			</h1>
+			<p class="editable">
+				UPDATE: November 7, 2020: The 40 kids split between Entebbe and Kakiri are incredibly low on food, eating 1 small meal per day.<br /><br />Since early April, Uganda's economy has been devastated by the impact of Covid 19, with most people unable to work to support their needs.<br /><br />This is impacting the extreme poor most acutely.
+			</p>
+			<div class="button">
+				<a href="#donate">Donate Now</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+	<h2 class="editable" style="text-align: center;">
+		Transforming Lives
+	</h2>
+
+	<ul class="thirds">
+		<li>
+			<div class="image">{% include icons/site.html icon="population" %}</div>
+			<h3 class="editable">
+				Uganda
+			</h3>
+			<p class="editable">
+				Meet Peter, Denis and Andrew - the caretakers of two orphanages in Uganda<br /><br /><!-- <a href="http://rescuesthepoor.org/> --> <img alt="denis with the children" title="Denis with the Children" src="/images/RTPU/denis_w_children.png" /> <!-- </a> -->
+			</p>
+		</li>
+
+		<li>
+			<div class="image">{% include icons/site.html icon="economy" %}</div>
+			<h3 class="editable">
+				Integrity
+			</h3>
+			<p class="editable">
+				<a target="_blank" rel="noopener" href="https://www.guidestar.org/profile/82-1475689">We're a Guidestar Platinum charity.</a><br /><br />Over 96% of all funds end up in the hands of recipients - the other 4% are bank and wiring fees.<br /><br />We're a 100% volunteer-driven organization.
+			</p>
+		</li>
+
+		<li>
+			<div class="image">{% include icons/site.html icon="conditions" %}</div>
+			<h3 class="editable">
+				Haiti
+			</h3>
+			<p class="editable">
+				We know families in Port Au Prince, Las Cayes and Pignon<br /><br />With your generosity they are working hard to survive and thrive.<br /><br /><img alt="denis" src="/images/Haiti/12737011_1111492042215444_771151836_o.jpg" />
+			</p>
+		</li>
+	</ul>
+</div>
+
+<div class="container">
+	<div class="columns">
+		<div>
+			<img class="editable" src="/images/sheep2.png" alt="Sheep" />
+		</div>
+		<div>
+			<h2 class="editable">
+				Our Mission
+			</h2>
+			<p class="editable">
+				We assist orphanages in Uganda and Haiti to support vulnerable children, widows and needy families. We target basic needs like Food, Shelter, Clothes, Healthcare and Education with Love and Prosperity as we share the amazing gospel of Christ Jesus.
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<hr />
+	<blockquote>
+		<p class="quote editable">
+			Sympathy sees, and says, &lsquo;I&rsquo;m sorry.&rsquo; Compassion feels, and whispers, &lsquo;I'll help.&rsquo;
+		</p>
+		<div class="attribute">
+			<p class="meta">
+				<!-- <span class="image"><img class="editable" src="/images/wooly.jpg" alt="Wooly" /></span>  -->
+				<span class="author editable"></span>
+			</p>
+		</div>
+	</blockquote>
+</div>
+
+<div class="darker">
+	<div class="container">
+		<h2 class="editable">
+			Help the kids!
+		</h2>
+		<p class="editable" style="text-align: center;">
+			Sign up to hear how our work is making a difference.
+		</p>
+		<form action="{{ site.newsletter_action }}" method="post">
+			<input type="text" name="EMAIL" placeholder="Email" />
+			<input type="submit" value="Sign up" />
+		</form>
+	</div>
+</div>
+
+<div class="container" id="donate">
+	<h2 class="editable">
+		Impact: November
+	</h2>
+	<div class="donate">
+		{{ site.donation_embed }}
+	</div>
+</div>
+
+<!--
+<div class="darker">
+	<div class="container">
+		<h2 class="editable">
+			Updates
+		</h2>
+		<p class="editor-link"><a href="cloudcannon:collections/_posts" class="btn"><strong>&#9998;</strong> Add Update</a></p>
+		<div class="posts">
+			{% for post in site.posts %}
+				<div class="post">
+					<div class="image" style="background-image: url({{ post.featured_image}})"></div>
+					<div class="post-content">
+						<p class="date">{{ post.date | date: '%B %d, %Y' }}</p>
+						<h3>{{ post.title }}</h3>
+
+						{{ post.content }}
+						<p class="editor-link"><a href="cloudcannon:collections/{{ post.path }}" class="btn"><strong>&#9998;</strong> Edit Update</a></p>
+					</div>
+				</div>
+			{% endfor %}
+		
+	
+
+-->

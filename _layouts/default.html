@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html prefix="og: https://ogp.me/ns#">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta property="og:title" content="Rescue The Poor America" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://www.rescuethepooramerica.com/" />
+		<meta property="og:image" content="https://www.rescuethepooramerica.com/images/RTP_logo.png" />
+		
+		{% seo %}
+
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet" />
+		<link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css" />
+		<link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.png" sizes="32x32" />
+
+		{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
+			<script>
+				window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+				ga('create', '{{ site.google_analytics_key }}', 'auto');
+				ga('send', 'pageview');
+			</script>
+			<script async src='https://www.google-analytics.com/analytics.js'></script>
+		{% endif %}
+		
+		<!-- Facebook Pixel Code -->
+		<script>
+		  !function(f,b,e,v,n,t,s)
+		  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		  n.queue=[];t=b.createElement(e);t.async=!0;
+		  t.src=v;s=b.getElementsByTagName(e)[0];
+		  s.parentNode.insertBefore(t,s)}(window, document,'script',
+		  'https://connect.facebook.net/en_US/fbevents.js');
+		  fbq('init', '360821745172560');
+		  fbq('track', 'PageView');
+		</script>
+		<noscript><img height="1" width="1" style="display:none"
+		  src="https://www.facebook.com/tr?id=360821745172560&ev=PageView&noscript=1"
+		/></noscript>
+		<!-- End Facebook Pixel Code -->
+		
+	</head>
+	<body>
+		<nav>
+		
+		
+			<div class="container">
+				<a href="{{ site.baseurl }}">{% include logo.html %}
+			
+		
+			<div>
+				<h1 class="editable">
+					<a class="cc-active" href=""> </a><a class="cc-active" href=""> </a><a class="cc-active" href=""> </a><a class="cc-active" href=""> </a><a class="cc-active" href=""> </a>
+					<p style="text-align:center">Rescue The Poor America <a target="_blank" href="https://www.guidestar.org/profile/82-1475689"><img alt="guidestar_logo" src="/images/Guidestar_platinum.png" /></a></p>
+				</h1>
+			</div>
+		</a></div></nav>
+		<div class="content">
+			{{ content }}
+		</div>
+		<footer>
+			<p class="editor-link" style="margin-bottom: 20px;"><a href="cloudcannon:collections/_data/company.yml" class="btn"><strong>&#9998;</strong> Update footer</a></p>
+			<div class="container">
+				<div class="about">
+					<p>{{ site.data.company.mission_statement }}</p>
+				</div>
+
+				<div class="contact">
+					<!--
+					<address>
+						<a href="https://www.google.com/maps/place/{{ site.data.company.address | url_encode }}">
+							{% include icons/footer.html icon="place" %} {{ site.data.company.address }}
+						
+					
+					-->
+					<p class="email">
+						<a href="mailto:{{ site.data.company.email }}">
+							{% include icons/footer.html icon="email" %} {{ site.data.company.email }}
+						</a>
+					</p>
+					<!--
+					<p class="phone">
+						<a href="tel:{{ site.data.company.phone | replace: ' ', '-' }}">
+							{% include icons/footer.html icon="phone" %} {{ site.data.company.phone }}
+						
+					<p></p>
+					-->
+				</div>
+
+				<div class="sharing">
+					<a class="facebook" href="https://www.facebook.com/{{ site.data.company.facebook }}">
+						{% include icons/social-media.html social_icon="facebook" %}
+					</a>
+					<a class="linkedin" href="https://www.linkedin.com/company/{{ site.data.company.linkedin }}">
+						{% include icons/social-media.html social_icon="linkedin" %}
+					</a>					
+					<!--
+					<a class="twitter" href="https://twitter.com/{{ site.data.company.twitter }}">
+						{% include icons/social-media.html social_icon="twitter" %}
+					
+					<a class="youtube" href="https://youtube.com/{{ site.data.company.youtube }}">
+						{% include icons/social-media.html social_icon="youtube" %}
+					</a>
+					-->
+				</div>
+			</div>
+		</footer>
+		<p class="copyright">
+			<a href="https://cloudcannon.com/">
+				Template by CloudCannon
+			</a>
+		</p>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script type="text/javascript">
+			$('a[href*=\\#]').on('click', function(event){
+				var el = $(this.hash);
+				if (el.length > 0) {
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+				}
+			});
+		</script>
+	</body>
+</html>
